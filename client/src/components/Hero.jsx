@@ -1,4 +1,7 @@
 import React from 'react';
+import Content from './Content';
+import Navbar from './Navbar';
+import Music from './Music';
 
 const Hero = () => {
   return (
@@ -11,6 +14,9 @@ const Hero = () => {
         loop
         muted
       />
+      <Navbar />
+      <Content />
+      <Music />
     </div>
   );
 };
