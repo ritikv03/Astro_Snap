@@ -2,6 +2,11 @@ import React from 'react'
 import { motion } from 'framer-motion';
 
 const Content = () => {
+
+  const handleGetImage = () => {
+    window.location.href = '/getimage';
+};
+
   return (
     <div>
       <div className="absolute top-0 left-0 h-full w-full bg-black opacity-50"></div>
@@ -18,7 +23,7 @@ const Content = () => {
             initial = {{ opacity : 0, x : -100}}
             animate = {{ opacity : 1, x : 0}}
             transition={{ duration : 1.5}}
-            className="bg-purple-800 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded shadow-md">
+            className="bg-purple-800 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded shadow-md" onClick={handleGetImage}>
             Get Image
           </motion.button>
           <motion.button
