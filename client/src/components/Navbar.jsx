@@ -10,12 +10,12 @@ const Navbar = () => {
         </a>
         </div>
         <div className="flex items-center gap-2 sm:gap-4 mr-4 lg:mr-10">
-          <a href="/limitations" className="text-white text-xl sm:text-2xl relative group">
-            Limitations
+          <a href="/about" className="text-white text-xl sm:text-2xl relative group">
+            About
             <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-purple-800 transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform"></span>
           </a>
           <a href="/about" className="text-white text-xl sm:text-2xl relative group">
-            About
+            Account
             <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-purple-800 transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform"></span>
           </a>
         </div>
