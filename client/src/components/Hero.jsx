@@ -1,18 +1,18 @@
-import React from 'react'
+import React from 'react';
 
 const Hero = () => {
   return (
-    <div className='relative flex flex-col h-full w-full'>
+    <div className="relative h-screen w-full overflow-hidden">
       <video
+        className="absolute top-0 left-0 h-full w-full object-cover"
+        src="/blackhole.webm"
+        type="video/webm"
         autoPlay
-        muted
         loop
-        className='rotate-180 absolute top-[-340px] left-0 z-[1] w-full h-full object-cover'
-      >
-        <source src="/blackhole.webm" type = "video/webm"/>
-      </video>
+        muted
+      />
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
