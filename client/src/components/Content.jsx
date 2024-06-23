@@ -1,10 +1,15 @@
 import React from 'react'
+import axios from 'axios';
 import { motion } from 'framer-motion';
 
 const Content = () => {
 
   const handleGetImage = () => {
-    window.location.href = '/getimage';
+    console.log("GetImage function call")
+    axios.get("http://localhost:5000/getImage")
+      .then( (res) => {
+          console.log(res.data.url)
+      }) 
 };
 
   return (
