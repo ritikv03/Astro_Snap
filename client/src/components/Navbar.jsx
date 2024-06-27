@@ -15,7 +15,7 @@ const Navbar = () => {
             <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-purple-800 transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform"></span>
           </a>
           <a href="/about" className="text-white text-xl sm:text-2xl relative group">
-            Account
+            Settings
             <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-purple-800 transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform"></span>
           </a>
         </div>
