@@ -5,7 +5,7 @@ const Navbar = () => {
     <div className="absolute top-0 left-0 w-full z-20">
       <nav className="mt-4 sm:mt-6 lg:mt-8 mb-20 flex items-center justify-between py-4 sm:py-6 px-4 lg:px-12 bg-transparent">
       <div className="flex items-center gap-4 ml-4 lg:ml-10">
-        <a href="/" className="cursor-pointer">
+        <a href="/index" className="cursor-pointer">
             <h1 className="font-bold text-3xl text-white">AS</h1>
         </a>
         </div>
