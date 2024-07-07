@@ -5,10 +5,10 @@ const handleFetch = () => {
   console.log("Fetch function is called");
   axios.get("http://localhost:5000/fetch")
       .then((res) => {
-          localStorage.setItem("url", res.data.url);
-          localStorage.setItem("explanation", res.data.explanation);
-          localStorage.setItem("title", res.data.title);
-          localStorage.setItem("date", res.data.date);
+          Cookies.set("url", res.data.url);
+          Cookies.set("explanation", res.data.explanation);
+          Cookies.set("title", res.data.title);
+          Cookies.set("date", res.data.date);
       })
       .catch((error) => {
           console.error("There was an error fetching the data:", error);
