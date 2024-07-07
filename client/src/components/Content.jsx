@@ -5,12 +5,18 @@ import { motion } from 'framer-motion';
 const Content = () => {
 
   const handleGetImage = () => {
-    console.log("GetImage function call")
-    axios.get("http://localhost:5000/getImage")
-      .then( (res) => {
-          console.log(res.data.url)
+    console.log("Message function is called")
+    axios.get("http://localhost:5000/sendMessage")
+      .then((res) => {
+          localStorage.setItem("url", res.data.url)
       }) 
-};
+  };
+
+  const handleMailFunc = () => {
+    console.log("Mailer function is called!")
+    axios.get("http://localhost:5000/sendMessage")
+      .then()
+  }
 
   return (
     <div>
@@ -29,14 +35,14 @@ const Content = () => {
             animate = {{ opacity : 1, x : 0}}
             transition={{ duration : 1.5}}
             className="bg-purple-800 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded shadow-md" onClick={handleGetImage}>
-            Get Image
+            Get Message
           </motion.button>
           <motion.button
             initial = {{ opacity : 0, x : 100}}
             animate = {{ opacity : 1, x : 0}}
             transition={{ duration : 1.5}} 
-            className="bg-purple-800 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded shadow-md">
-            Enter Data
+            className="bg-purple-800 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded shadow-md" onClick={handleMailFunc}>
+            Enter Email
           </motion.button>
         </div>
       </div>
